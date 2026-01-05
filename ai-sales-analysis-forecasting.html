@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      AI-Sales-Analysis-Forecasting - Fashion Forecasting Plat for iORA
+    </title>
+    <meta
+      property="og:title"
+      content="AI-Sales-Analysis-Forecasting - Fashion Forecasting Plat for iORA"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Nunito Sans";
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./ai-sales-analysis-forecasting.css" rel="stylesheet" />
+
+      <div class="ai-sales-analysis-forecasting-container1">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div id="" class="navigation-container1">
+            <nav class="navigation-wrapper">
+              <div id="mobileOverlay" class="navigation-mobile-overlay">
+                <div class="navigation-overlay-header">
+                  <a href="Homepage">
+                    <div class="navigation-logo">
+                      <span class="section-title">iORA</span>
+                    </div>
+                  </a>
+                  <button
+                    id="mobileClose"
+                    aria-label="Close Menu"
+                    class="navigation-close-btn"
+                  >
+                    <svg
+                      fill="none"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m15 9l-6 6m0-6l6 6"></path>
+                      <circle r="10" cx="12" cy="12"></circle>
+                    </svg>
+                  </button>
+                </div>
+                <div class="navigation-overlay-content">
+                  <ul class="navigation-mobile-list">
+                    <li>
+                      <a href="Homepage">
+                        <div class="navigation-mobile-link">
+                          <span>Dashboard</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="navigation-mobile-link">
+                          <span>Sales Analysis</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="navigation-mobile-link">
+                          <span>Database Management</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="navigation-mobile-link">
+                          <span>Corporate Culture</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li><hr class="navigation-divider" /></li>
+                    <li>
+                      <a href="#">
+                        <div class="navigation-mobile-link">
+                          <span>Profile Settings</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="logout navigation-mobile-link">
+                          <span>Logout</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <dialog id="profileModal" class="navigation-dialog">
+                <div class="navigation-dialog-content">
+                  <div class="navigation-dialog-header">
+                    <h2 class="section-subtitle">Personal Information</h2>
+                    <button id="closeProfile" class="navigation-dialog-close">
+                      <svg
+                        fill="none"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m15 9l-6 6m0-6l6 6"></path>
+                        <circle r="10" cx="12" cy="12"></circle>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="navigation-user-info">
+                    <div class="navigation-user-avatar">
+                      <svg
+                        fill="none"
+                        width="48"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="48"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle r="10" cx="12" cy="12"></circle>
+                        <circle r="3" cx="12" cy="10"></circle>
+                        <path
+                          d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="navigation-user-details">
+                      <p class="section-content">
+                        <span class="navigation-text16">Employee ID:</span>
+                        <span>#IOR-2941</span>
+                      </p>
+                      <p class="section-content">
+                        <span class="navigation-text18">Department:</span>
+                        <span>Regional Merchandising</span>
+                      </p>
+                      <p class="section-content">
+                        <span class="navigation-text20">Last Login:</span>
+                        <span>Oct 24, 2025 08:45 AM</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="navigation-dialog-actions">
+                    <button class="btn-outline btn-sm btn">Edit Profile</button>
+                    <button class="btn-sm btn btn-primary">Logout</button>
+                  </div>
+                </div>
+              </dialog>
+              <div class="navigation-container">
+                <a href="Homepage">
+                  <div class="navigation-logo">
+                    <span class="section-title">iORA</span>
+                  </div>
+                </a>
+                <div class="navigation-desktop-menu">
+                  <ul class="navigation-list">
+                    <a href="home.html">
+                      <li
+                        class="navigation-thq-navigation-item-elm1 navigation-item"
+                      >
+                        <div class="navigation-link">
+                          <span>Dashboard</span>
+                        </div>
+                      </li>
+                    </a>
+                    <a href="ai-sales-analysis-forecasting.html">
+                      <li
+                        class="navigation-thq-navigation-item-elm2 navigation-item"
+                      >
+                        <div class="navigation-link">
+                          <svg
+                            fill="none"
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M3 3v16a2 2 0 0 0 2 2h16M7 16h8m-8-5h12M7 6h3"
+                            ></path>
+                          </svg>
+                          <span>Sales Analysis</span>
+                        </div>
+                      </li>
+                    </a>
+                    <a href="database-management.html">
+                      <li
+                        class="navigation-thq-navigation-item-elm3 navigation-item"
+                      >
+                        <div class="navigation-link">
+                          <svg
+                            fill="none"
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M3 5v14a9 3 0 0 0 18 0V5"></path>
+                            <path d="M3 12a9 3 0 0 0 18 0"></path>
+                          </svg>
+                          <span>Database</span>
+                        </div>
+                      </li>
+                    </a>
+                    <a href="corporate-culture.html">
+                      <li
+                        class="navigation-thq-navigation-item-elm4 navigation-item"
+                      >
+                        <div class="navigation-link">
+                          <svg
+                            fill="none"
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
+                            ></path>
+                          </svg>
+                          <span>Culture</span>
+                        </div>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="navigation-actions">
+                  <button
+                    id="profileToggle"
+                    aria-label="Personal Information"
+                    class="navigation-profile-btn"
+                  >
+                    <a href="personal-account.html">
+                      <div class="navigation-thq-navigation-avatar-elm">
+                        <svg
+                          fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle r="4" cx="12" cy="7"></circle>
+                        </svg>
+                      </div>
+                    </a>
+                  </button>
+                  <button
+                    id="mobileToggle"
+                    aria-label="Toggle Menu"
+                    aria-expanded="false"
+                    class="navigation-mobile-toggle"
+                  >
+                    <svg
+                      fill="none"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+                <a href="index.html" class="navigation-navlink6 button">
+                  <span>
+                    <fragment class="ai-sales-analysis-forecasting-fragment10">
+                      <span class="ai-sales-analysis-forecasting-text10">
+                        Log Out
+                      </span>
+                    </fragment>
+                  </span>
+                </a>
+              </div>
+            </nav>
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <script defer="" data-name="navigation-logic">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const mobileToggle = document.getElementById("mobileToggle")
+                      const mobileClose = document.getElementById("mobileClose")
+                      const mobileOverlay = document.getElementById("mobileOverlay")
+                      const profileToggle = document.getElementById("profileToggle")
+                      const profileModal = document.getElementById("profileModal")
+                      const closeProfile = document.getElementById("closeProfile")
+
+                      const openMobileMenu = () => {
+                        mobileOverlay.style.display = "flex"
+                        document.body.style.overflow = "hidden"
+                        mobileToggle.setAttribute("aria-expanded", "true")
+                      }
+
+                      const closeMobileMenu = () => {
+                        mobileOverlay.style.display = "none"
+                        document.body.style.overflow = ""
+                        mobileToggle.setAttribute("aria-expanded", "false")
+                      }
+
+                      mobileToggle.addEventListener("click", openMobileMenu)
+                      mobileClose.addEventListener("click", closeMobileMenu)
+
+                      profileToggle.addEventListener("click", () => {
+                        profileModal.showModal()
+                      })
+
+                      closeProfile.addEventListener("click", () => {
+                        profileModal.close()
+                      })
+
+                      profileModal.addEventListener("click", (e) => {
+                        if (e.target === profileModal) {
+                          profileModal.close()
+                        }
+                      })
+
+                      // Handle active link state simulation
+                      const navLinks = document.querySelectorAll(".navigation-link")
+                      navLinks.forEach((link) => {
+                        link.addEventListener("click", function () {
+                          navLinks.forEach((l) => (l.style.color = "var(--color-on-surface)"))
+                          this.style.color = "var(--color-accent)"
+                        })
+                      })
+
+                      // Handle mobile links closing menu
+                      const mobileLinks = document.querySelectorAll(".navigation-mobile-link")
+                      mobileLinks.forEach((link) => {
+                        link.addEventListener("click", closeMobileMenu)
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </navigation-wrapper>
+        <section class="ai-hero-section">
+          <div class="ai-hero-container">
+            <div class="ai-hero-header">
+              <h1 class="hero-title">AI Sales Forecasting</h1>
+              <p class="hero-subtitle">
+                Harness intelligent predictive analytics to optimize iORA's
+                seasonal collections for the Asian market.
+              </p>
+            </div>
+            <div class="ai-hero-chat-container">
+              <div class="ai-hero-input-wrapper">
+                <div class="ai-hero-chat-header">
+                  <div class="ai-hero-status-dot"></div>
+                  <span class="section-content">
+                    iORA Intelligence Engine v2.5
+                  </span>
+                </div>
+                <form
+                  action="#"
+                  method="POST"
+                  data-form-id="611c93c0-4f4d-461c-ba23-ed1ba49a5c55"
+                  class="ai-hero-form"
+                >
+                  <textarea
+                    id="thq_textarea_z0u3"
+                    name="textarea"
+                    required="true"
+                    placeholder="e.g., Forecast sales for linen trousers in Sandy Gold for the upcoming humid season in Singapore..."
+                    data-form-field-id="thq_textarea_z0u3"
+                    class="ai-hero-textarea"
+                  ></textarea>
+                  <div class="ai-hero-controls">
+                    <div class="ai-hero-presets">
+                      <button
+                        id="thq_button_e5Ut"
+                        name="button"
+                        type="button"
+                        data-form-field-id="thq_button_e5Ut"
+                        class="btn-outline btn-sm btn"
+                      >
+                        Spring/Summer '25
+                      </button>
+                      <button
+                        id="thq_button_ZqYR"
+                        name="button"
+                        type="button"
+                        data-form-field-id="thq_button_ZqYR"
+                        class="btn-outline btn-sm btn"
+                      >
+                        Singapore Region
+                      </button>
+                      <button
+                        id="thq_button_9lul"
+                        name="button"
+                        type="button"
+                        data-form-field-id="thq_button_9lul"
+                        class="btn-outline btn-sm btn"
+                      >
+                        Minimalist Urban
+                      </button>
+                    </div>
+                    <a
+                      href="#AiProductSection"
+                      id="thq_button_sXYk"
+                      name="button"
+                      data-form-field-id="thq_button_sXYk"
+                      class="ai-sales-analysis-forecasting-thq-btn-elm4 btn-accent btn ai-hero-run-btn"
+                    >
+                      <svg
+                        fill="none"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M12 18V5m3 8a4.17 4.17 0 0 1-3-4a4.17 4.17 0 0 1-3 4m8.598-6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"
+                        ></path>
+                        <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"></path>
+                        <path d="M18 18a4 4 0 0 0 2-7.464"></path>
+                        <path
+                          d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+                        ></path>
+                        <path d="M6 18a4 4 0 0 1-2-7.464"></path>
+                        <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path>
+                      </svg>
+                      <span>Run Forecast</span>
+                    </a>
+                  </div>
+                </form>
+              </div>
+              <div class="ai-hero-guidance">
+                <h2 class="section-subtitle">Prompting Tips</h2>
+                <ul class="ai-hero-tips-list">
+                  <li class="section-content">
+                    <span>Specify</span>
+                    <strong>Fabric</strong>
+                    <span>(e.g., Breathable Cotton, Silk Blend)</span>
+                  </li>
+                  <li class="section-content">
+                    <span>Define</span>
+                    <strong>Style</strong>
+                    <span>(e.g., Contemporary Minimalist, Professional)</span>
+                  </li>
+                  <li class="section-content">
+                    <span>Include</span>
+                    <strong>Volume</strong>
+                    <span>constraints for peak months</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ai-steps-section">
+          <div class="ai-steps-container">
+            <div class="ai-steps-intro">
+              <h2 class="section-title">Forecast Configuration</h2>
+              <p class="section-content">
+                Fine-tune your analysis parameters for precise seasonal
+                projections.
+              </p>
+            </div>
+            <div class="ai-steps-list">
+              <div class="ai-step-item">
+                <div class="ai-step-number"><span>01</span></div>
+                <div class="ai-step-content">
+                  <h3 class="section-subtitle">Material &amp; Aesthetics</h3>
+                  <div class="ai-step-grid">
+                    <div class="ai-sales-analysis---forecasting-ai-input-group">
+                      <label class="section-content">Fabric Selection</label>
+                      <select class="ai-select">
+                        <option>Premium Linen Blend</option>
+                        <option>Breathable Cotton</option>
+                        <option>Lightweight Viscose</option>
+                        <option>Technical Silk</option>
+                      </select>
+                    </div>
+                    <div class="ai-sales-analysis---forecasting-ai-input-group">
+                      <label class="section-content">Primary Colour</label>
+                      <select class="ai-select">
+                        <option>Sandy Gold (Brand Standard)</option>
+                        <option>Prussian Blue</option>
+                        <option>Minimalist White</option>
+                        <option>Neutral Stone</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ai-step-item">
+                <div class="ai-step-number"><span>02</span></div>
+                <div class="ai-step-content">
+                  <h3 class="section-subtitle">Market Context</h3>
+                  <div class="ai-step-grid">
+                    <div class="ai-sales-analysis---forecasting-ai-input-group">
+                      <label class="section-content">Target Climate</label>
+                      <input
+                        type="text"
+                        value="Singapore / Tropical Humid"
+                        readonly="true"
+                        class="ai-input"
+                      />
+                    </div>
+                    <div class="ai-sales-analysis---forecasting-ai-input-group">
+                      <label class="section-content">Time Horizon</label>
+                      <select class="ai-select">
+                        <option>6 Months (Seasonal)</option>
+                        <option>12 Months (Annual)</option>
+                        <option>3 Months (Quarterly)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ai-step-item">
+                <div class="ai-step-number"><span>03</span></div>
+                <div class="ai-step-content">
+                  <h3 class="section-subtitle">Confidence &amp; Volume</h3>
+                  <div class="ai-step-grid">
+                    <div class="ai-sales-analysis---forecasting-ai-input-group">
+                      <label class="section-content">
+                        Confidence Level (%)
+                      </label>
+                      <input
+                        type="range"
+                        max="99"
+                        min="70"
+                        value="92"
+                        class="ai-range"
+                      />
+                    </div>
+                    <div class="ai-sales-analysis---forecasting-ai-input-group">
+                      <label class="section-content">Projected Volume</label>
+                      <input
+                        type="number"
+                        placeholder="Enter target SKU count"
+                        class="ai-input"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#AiStatsSection"
+            id="thq_button_sXYk"
+            name="button"
+            class="ai-sales-analysis-forecasting-thq-btn-elm5 btn-accent btn ai-hero-run-btn"
+          >
+            <svg
+              fill="none"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 18V5m3 8a4.17 4.17 0 0 1-3-4a4.17 4.17 0 0 1-3 4m8.598-6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"
+              ></path>
+              <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"></path>
+              <path d="M18 18a4 4 0 0 0 2-7.464"></path>
+              <path
+                d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+              ></path>
+              <path d="M6 18a4 4 0 0 1-2-7.464"></path>
+              <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path>
+            </svg>
+            <span class="ai-sales-analysis-forecasting-text24">
+              Run Forecast
+            </span>
+          </a>
+        </section>
+        <ai-product-section-wrapper class="ai-product-section-wrapper">
+          <!--AiProductSection component-->
+          <section
+            id="AiProductSection"
+            class="ai-product-section-thq-ai-product-section-elm ai-product-section"
+          >
+            <div class="ai-table-outer">
+              <div class="ai-table-header-actions">
+                <h2 class="section-title">
+                  <fragment class="ai-sales-analysis-forecasting-fragment53">
+                    <span class="ai-sales-analysis-forecasting-text67">
+                      Projection Results
+                    </span>
+                  </fragment>
+                </h2>
+                <div class="ai-table-buttons">
+                  <button class="btn-outline btn-sm btn">
+                    <svg
+                      fill="none"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="18"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M12 3v18"></path>
+                      <rect x="3" y="3" rx="2" width="18" height="18"></rect>
+                      <path d="M3 9h18M3 15h18"></path>
+                    </svg>
+                    <span>
+                      <fragment
+                        class="ai-sales-analysis-forecasting-fragment11"
+                      >
+                        <span class="ai-sales-analysis-forecasting-text25">
+                          Toggle Columns
+                        </span>
+                      </fragment>
+                    </span>
+                  </button>
+                  <button class="btn-sm btn btn-primary">
+                    <svg
+                      fill="none"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="18"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 15V3m9 12v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+                      ></path>
+                      <path d="m7 10l5 5l5-5"></path>
+                    </svg>
+                    <span>
+                      <fragment
+                        class="ai-sales-analysis-forecasting-fragment12"
+                      >
+                        <span class="ai-sales-analysis-forecasting-text26">
+                          Export CSV
+                        </span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="ai-table-wrapper">
+                <table class="ai-data-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment13"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text27">
+                              Fabric
+                            </span>
+                          </fragment>
+                        </span>
+                      </th>
+                      <th>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment14"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text28">
+                              Colour
+                            </span>
+                          </fragment>
+                        </span>
+                      </th>
+                      <th>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment15"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text29">
+                              Size
+                            </span>
+                          </fragment>
+                        </span>
+                      </th>
+                      <th>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment16"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text30">
+                              Style
+                            </span>
+                          </fragment>
+                        </span>
+                      </th>
+                      <th>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment17"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text31">
+                              Peak Mo.
+                            </span>
+                          </fragment>
+                        </span>
+                      </th>
+                      <th>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment18"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text32">
+                              Proj. Vol.
+                            </span>
+                          </fragment>
+                        </span>
+                      </th>
+                      <th>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment19"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text33">
+                              Confidence
+                            </span>
+                          </fragment>
+                        </span>
+                      </th>
+                      <th>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment20"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text34">
+                              Reorder Qty
+                            </span>
+                          </fragment>
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment21"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text35">
+                              Linen Blend
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment22"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text36">
+                              Sandy Gold
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment23"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text37">
+                              S / M / L
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment24"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text38">
+                              Urban Trousers
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment25"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text39">
+                              May
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment26"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text40">
+                              1,250
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="ai-badge-high ai-badge">
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment49"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text63">
+                              94%
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment27"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text41">
+                              450
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment28"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text42">
+                              Cotton Poplin
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment29"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text43">
+                              Pure White
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment30"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text44">
+                              XS - XL
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment31"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text45">
+                              Classic Shirt
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment32"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text46">
+                              June
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment33"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text47">
+                              2,100
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="ai-badge-high ai-badge">
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment50"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text64">
+                              91%
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment34"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text48">
+                              800
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment35"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text49">
+                              Viscose Silk
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment36"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text50">
+                              Prussian Blue
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment37"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text51">
+                              S / M / L
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment38"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text52">
+                              Evening Dress
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment39"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text53">
+                              August
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment40"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text54">
+                              850
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="ai-badge-med ai-badge">
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment51"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text65">
+                              82%
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment41"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text55">
+                              200
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment42"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text56">
+                              Technical Mesh
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment43"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text57">
+                              Neutral Stone
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment44"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text58">
+                              Free Size
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment45"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text59">
+                              Outerwear
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment46"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text60">
+                              October
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment47"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text61">
+                              1,100
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="ai-badge-high ai-badge">
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment52"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text66">
+                              88%
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          <fragment
+                            class="ai-sales-analysis-forecasting-fragment48"
+                          >
+                            <span class="ai-sales-analysis-forecasting-text62">
+                              350
+                            </span>
+                          </fragment>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </ai-product-section-wrapper>
+        <ai-stats-section-wrapper class="ai-stats-section-wrapper">
+          <!--AiStatsSection component-->
+          <section
+            id="AiStatsSection"
+            class="ai-stats-section-thq-ai-stats-section-elm ai-stats-section"
+          >
+            <div class="ai-stats-bento">
+              <div class="ai-bento-large ai-bento-card">
+                <h3 class="section-subtitle">
+                  <fragment class="ai-sales-analysis-forecasting-fragment62">
+                    <span class="ai-sales-analysis-forecasting-text76">
+                      Seasonal Demand Curve
+                    </span>
+                  </fragment>
+                </h3>
+                <div class="ai-chart-placeholder">
+                  <svg viewBox="0 0 400 150" class="ai-line-chart">
+                    <path
+                      d="M0 120 Q 50 110, 100 80 T 200 60 T 300 100 T 400 40"
+                      fill="none"
+                      stroke="var(--color-accent)"
+                      stroke-width="3"
+                    ></path>
+                    <circle
+                      r="4"
+                      cx="200"
+                      cy="60"
+                      fill="var(--color-primary)"
+                    ></circle>
+                    <text
+                      x="180"
+                      y="50"
+                      fill="var(--color-primary)"
+                      class="ai-stats-section-thq-section-content-elm1 section-content"
+                    ></text>
+                  </svg>
+                  <span>
+                    <fragment class="ai-sales-analysis-forecasting-fragment59">
+                      <span class="ai-sales-analysis-forecasting-text73">
+                        Peak (June)
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+              </div>
+              <div class="ai-bento-small ai-bento-card">
+                <h3 class="section-subtitle">
+                  <fragment class="ai-sales-analysis-forecasting-fragment63">
+                    <span class="ai-sales-analysis-forecasting-text77">
+                      Fabric Heatmap
+                    </span>
+                  </fragment>
+                </h3>
+                <div class="ai-heatmap-grid">
+                  <div
+                    class="ai-stats-section-thq-ai-heatmap-cell-elm1 ai-heatmap-cell"
+                  >
+                    <span>
+                      <fragment
+                        class="ai-sales-analysis-forecasting-fragment54"
+                      >
+                        <span class="ai-sales-analysis-forecasting-text68">
+                          Linen
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                  <div
+                    class="ai-stats-section-thq-ai-heatmap-cell-elm2 ai-heatmap-cell"
+                  >
+                    <span>
+                      <fragment
+                        class="ai-sales-analysis-forecasting-fragment55"
+                      >
+                        <span class="ai-sales-analysis-forecasting-text69">
+                          Cotton
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                  <div
+                    class="ai-stats-section-thq-ai-heatmap-cell-elm3 ai-heatmap-cell"
+                  >
+                    <span>
+                      <fragment
+                        class="ai-sales-analysis-forecasting-fragment56"
+                      >
+                        <span class="ai-sales-analysis-forecasting-text70">
+                          Silk
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                  <div
+                    class="ai-stats-section-thq-ai-heatmap-cell-elm4 ai-heatmap-cell"
+                  >
+                    <span>
+                      <fragment
+                        class="ai-sales-analysis-forecasting-fragment57"
+                      >
+                        <span class="ai-sales-analysis-forecasting-text71">
+                          Wool
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="ai-bento-medium ai-bento-card">
+                <h3 class="section-subtitle">
+                  <fragment class="ai-sales-analysis-forecasting-fragment64">
+                    <span class="ai-sales-analysis-forecasting-text78">
+                      Top Performing SKU
+                    </span>
+                  </fragment>
+                </h3>
+                <div class="ai-sku-highlight">
+                  <span class="ai-stats-section-thq-hero-title-elm hero-title">
+                    <fragment class="ai-sales-analysis-forecasting-fragment60">
+                      <span class="ai-sales-analysis-forecasting-text74">
+                        #SG-25-GLD
+                      </span>
+                    </fragment>
+                  </span>
+                  <p class="section-content">
+                    <fragment class="ai-sales-analysis-forecasting-fragment61">
+                      <span class="ai-sales-analysis-forecasting-text75">
+                        Sandy Gold Urban Trousers
+                      </span>
+                    </fragment>
+                  </p>
+                  <div class="ai-growth-indicator">
+                    <span class="ai-stats-section-text15">
+                      <fragment
+                        class="ai-sales-analysis-forecasting-fragment58"
+                      >
+                        <span class="ai-sales-analysis-forecasting-text72">
+                          +12.4% vs Prev. Season
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="ai-bento-small ai-bento-card">
+                <h3 class="section-subtitle">
+                  <fragment class="ai-sales-analysis-forecasting-fragment65">
+                    <span class="ai-sales-analysis-forecasting-text79">
+                      Colour Dist.
+                    </span>
+                  </fragment>
+                </h3>
+                <div class="ai-pie-sim">
+                  <div
+                    class="ai-stats-section-thq-ai-pie-slice-elm1 ai-pie-slice"
+                  ></div>
+                  <div
+                    class="ai-stats-section-thq-ai-pie-slice-elm2 ai-pie-slice"
+                  ></div>
+                  <div
+                    class="ai-stats-section-thq-ai-pie-slice-elm3 ai-pie-slice"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </ai-stats-section-wrapper>
+        <section class="ai-comparison-section">
+          <div class="ai-comparison-container">
+            <h2 class="section-title">Run Comparison</h2>
+            <div class="ai-comparison-table-wrapper">
+              <table class="ai-comparison-table">
+                <thead>
+                  <tr>
+                    <th><span>Parameter</span></th>
+                    <th><span>Run A (Standard)</span></th>
+                    <th><span>Run B (Premium)</span></th>
+                    <th><span>Delta</span></th>
+                    <th><span>Action</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>Fabric</span></td>
+                    <td><span>Cotton Poplin</span></td>
+                    <td><span>Premium Silk Blend</span></td>
+                    <td><span>-</span></td>
+                    <td rowspan="4">
+                      <button class="btn-accent btn-sm btn">Adopt Run B</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span>Proj. Volume</span></td>
+                    <td><span>2,100 units</span></td>
+                    <td><span>1,850 units</span></td>
+                    <td class="ai-delta-neg"><span>-11.9%</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Unit Margin</span></td>
+                    <td><span>$12.50</span></td>
+                    <td><span>$24.80</span></td>
+                    <td class="ai-delta-pos"><span>+$12.30</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>Total Forecast</span></td>
+                    <td><span>$26,250</span></td>
+                    <td><span>$45,880</span></td>
+                    <td class="ai-delta-pos"><span>+74.8%</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section class="ai-services-section">
+          <div class="ai-services-container">
+            <div class="ai-services-header">
+              <h2 class="section-title">Query History</h2>
+              <button class="btn-outline btn-sm btn">Save Snapshot</button>
+            </div>
+            <div class="ai-chat-history">
+              <div class="ai-chat-item">
+                <div class="ai-chat-meta">
+                  <span class="section-content">
+                    <span class="ai-sales-analysis-forecasting-text101">
+                      User
+                    </span>
+                    <span>• 14:20 PM</span>
+                  </span>
+                </div>
+                <div class="user-bubble ai-chat-bubble">
+                  <p class="section-content">
+                    Analyze Sandy Gold linen trousers for May-July Singapore
+                    humid season.
+                  </p>
+                </div>
+              </div>
+              <div class="ai-chat-item">
+                <div class="ai-chat-meta">
+                  <span class="section-content">
+                    <span class="ai-sales-analysis-forecasting-text103">
+                      iORA AI
+                    </span>
+                    <span>• 14:21 PM</span>
+                  </span>
+                </div>
+                <div class="ai-chat-bubble ai-bubble">
+                  <p class="section-content">
+                    Analysis complete. Based on historical data for Asian body
+                    types and Singapore's climate, linen-blend trousers in Sandy
+                    Gold show a high demand peak in late May. Volume adjusted
+                    for 92% confidence level.
+                  </p>
+                </div>
+              </div>
+              <div class="ai-chat-item">
+                <div class="ai-chat-meta">
+                  <span class="section-content">
+                    <span class="ai-sales-analysis-forecasting-text105">
+                      System
+                    </span>
+                    <span>• 14:25 PM</span>
+                  </span>
+                </div>
+                <div class="system-bubble ai-chat-bubble">
+                  <p class="section-content">
+                    <span>
+                      Parameter Change: Confidence level increased to 95%. Table
+                      updated.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ai-cta-section">
+          <div class="ai-cta-container">
+            <div class="ai-cta-bento">
+              <div class="ai-cta-main">
+                <h2 class="section-title">Strategic Insights</h2>
+                <p class="section-content">
+                  The current forecast suggests a 15% increase in production for
+                  'Sandy Gold' variants to meet early-season demand. Consider
+                  markdown strategies for 'Neutral Stone' outerwear by August.
+                </p>
+                <div class="ai-cta-actions">
+                  <a
+                    href="database-management.html"
+                    class="ai-sales-analysis-forecasting-thq-btn-elm8 btn btn-primary btn-lg"
+                  >
+                    Push to Database
+                  </a>
+                  <button class="btn-outline btn btn-lg">
+                    Generate Report
+                  </button>
+                </div>
+              </div>
+              <div class="ai-cta-side">
+                <div class="ai-cta-stat-card">
+                  <span class="section-subtitle">Reorder Threshold</span>
+                  <span
+                    class="ai-sales-analysis-forecasting-thq-hero-title-elm2 hero-title"
+                  >
+                    450 units
+                  </span>
+                </div>
+              </div>
+              <div class="ai-cta-side">
+                <div class="ai-cta-stat-card">
+                  <span class="section-subtitle">Market Fit</span>
+                  <span
+                    class="ai-sales-analysis-forecasting-thq-hero-title-elm3 hero-title"
+                  >
+                    98% Asian
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="ai-sales-analysis-forecasting-container2">
+          <div class="ai-sales-analysis-forecasting-container3">
+            <style>
+              section {
+                padding: var(--spacing-4xl) 0;
+                position: relative;
+                overflow: hidden;
+              }
+            </style>
+          </div>
+        </div>
+        <div class="ai-sales-analysis-forecasting-container4">
+          <div class="ai-sales-analysis-forecasting-container5">
+            <script defer="" data-name="ai-forecast-logic">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  // Simulation for Run Forecast button
+                  const runBtn = document.querySelector(".ai-hero-run-btn")
+                  const textarea = document.querySelector(".ai-hero-textarea")
+                  const chatHistory = document.querySelector(".ai-chat-history")
+
+                  if (runBtn) {
+                    runBtn.addEventListener("click", (e) => {
+                      e.preventDefault()
+                      const prompt = textarea.value.trim()
+
+                      if (prompt) {
+                        // Add user bubble
+                        const userItem = document.createElement("div")
+                        userItem.className = "ai-chat-item"
+                        userItem.innerHTML = `
+                          <div class="ai-chat-meta"><span class="section-content"><strong>User</strong> • Just now</span></div>
+                          <div class="ai-chat-bubble user-bubble"><p class="section-content">${prompt}</p></div>
+                        `
+                        chatHistory.appendChild(userItem)
+
+                        // Simulate AI response delay
+                        setTimeout(() => {
+                          const aiItem = document.createElement("div")
+                          aiItem.className = "ai-chat-item"
+                          aiItem.innerHTML = `
+                            <div class="ai-chat-meta"><span class="section-content"><strong>iORA AI</strong> • Just now</span></div>
+                            <div class="ai-chat-bubble ai-bubble"><p class="section-content">Processing new forecast for "${prompt.substring(0, 30)}...". Table and visualizations have been updated with the latest seasonal data.</p></div>
+                          `
+                          chatHistory.appendChild(aiItem)
+                          textarea.value = ""
+
+                          // Scroll to bottom
+                          chatHistory.scrollTop = chatHistory.scrollHeight
+                        }, 1500)
+                      }
+                    })
+                  }
+
+                  // Range input value display (optional enhancement)
+                  const rangeInput = document.querySelector(".ai-range")
+                  if (rangeInput) {
+                    rangeInput.addEventListener("input", (e) => {
+                      const label = e.target.previousElementSibling
+                      if (label) {
+                        label.textContent = `Confidence Level (${e.target.value}%)`
+                      }
+                    })
+                  }
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container1">
+            <footer class="footer-root">
+              <div class="footer-container">
+                <div class="footer-main-grid">
+                  <div class="footer-column">
+                    <div class="footer-brand-lockup">
+                      <span class="footer-logo">iORA</span>
+                      <p class="footer-tagline section-content">
+                        Established 1997. Reimagining classics for the
+                        contemporary Asian woman with meticulous attention to
+                        detail and comfort.
+                      </p>
+                    </div>
+                    <div class="footer-social-wrapper">
+                      <h3 class="footer-heading section-subtitle">
+                        Follow Our Story
+                      </h3>
+                      <div class="footer-social-icons">
+                        <a href="#">
+                          <div aria-label="Facebook" class="footer-social-link">
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div
+                            aria-label="Instagram"
+                            class="footer-social-link"
+                          >
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <rect
+                                  x="2"
+                                  y="2"
+                                  rx="5"
+                                  ry="5"
+                                  width="20"
+                                  height="20"
+                                ></rect>
+                                <path
+                                  d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                                ></path>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div aria-label="LinkedIn" class="footer-social-link">
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                                ></path>
+                                <circle r="2" cx="4" cy="4"></circle>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-column">
+                    <h3 class="footer-heading section-subtitle">
+                      Platform Navigation
+                    </h3>
+                    <nav class="footer-nav">
+                      <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                          <a href="#">
+                            <div class="footer-nav-link section-content">
+                              <svg
+                                width="18"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="18"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M5 12h14m-7-7l7 7l-7 7"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                              <span>Enterprise Homepage</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="footer-nav-item">
+                          <a href="#">
+                            <div class="footer-nav-link section-content">
+                              <svg
+                                width="18"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="18"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M5 12h14m-7-7l7 7l-7 7"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                              <span>AI Sales Forecasting</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="footer-nav-item">
+                          <a href="#">
+                            <div class="footer-nav-link section-content">
+                              <svg
+                                width="18"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="18"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M5 12h14m-7-7l7 7l-7 7"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                              <span>Database Management</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="footer-nav-item">
+                          <a href="#">
+                            <div class="footer-nav-link section-content">
+                              <svg
+                                width="18"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="18"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M5 12h14m-7-7l7 7l-7 7"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                              <span>Corporate Culture</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="footer-nav-item">
+                          <a href="#">
+                            <div class="footer-nav-link section-content">
+                              <svg
+                                width="18"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="18"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M5 12h14m-7-7l7 7l-7 7"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                              <span>Personal Account</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="footer-column">
+                    <h3 class="footer-heading section-subtitle">
+                      Headquarters
+                    </h3>
+                    <div class="footer-contact-info">
+                      <div class="footer-contact-item">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                            ></path>
+                            <circle r="3" cx="12" cy="10"></circle>
+                          </g>
+                        </svg>
+                        <span class="section-content">
+                          iORA Fashion Pte Ltd, Singapore
+                        </span>
+                      </div>
+                      <div class="footer-contact-item">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <span class="section-content">+65 6748 1234</span>
+                      </div>
+                      <div class="footer-contact-item">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                            ></path>
+                            <rect
+                              x="2"
+                              y="4"
+                              rx="2"
+                              width="20"
+                              height="16"
+                            ></rect>
+                          </g>
+                        </svg>
+                        <span class="section-content">enquiry@iora.com.sg</span>
+                      </div>
+                    </div>
+                    <div class="footer-newsletter">
+                      <p class="section-content footer-newsletter-text">
+                        Join the iORA inner circle for seasonal updates.
+                      </p>
+                      <form
+                        action="/subscribe"
+                        method="POST"
+                        data-form-id="05670fbf-042a-4fcb-aaa5-2f49c3d667c1"
+                        class="footer-form"
+                      >
+                        <div class="footer-input-group">
+                          <input
+                            type="email"
+                            id="thq_textinput_8p5r"
+                            name="textinput"
+                            required="true"
+                            aria-label="Email Address"
+                            placeholder="Email Address"
+                            data-form-field-id="thq_textinput_8p5r"
+                            class="footer-input"
+                          />
+                          <button
+                            id="thq_button__-Ih"
+                            name="button"
+                            type="submit"
+                            aria-label="Subscribe"
+                            data-form-field-id="thq_button__-Ih"
+                            class="footer-submit-btn"
+                          >
+                            <svg
+                              width="20"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M5 12h14m-7-7l7 7l-7 7"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-legal-bar">
+                  <div class="footer-legal-content">
+                    <p class="footer-copyright section-content">
+                      &amp;copy; 2025 iORA Fashion Pte Ltd. All rights reserved.
+                    </p>
+                    <div class="footer-legal-links">
+                      <a href="#">
+                        <div class="footer-legal-link section-content">
+                          <span>Privacy Policy</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link section-content">
+                          <span>Terms of Service</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link section-content">
+                          <span>Cookie Settings</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <script defer="" data-name="footer-logic">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const footerForm = document.querySelector(".footer-form")
+                      if (footerForm) {
+                        footerForm.addEventListener("submit", (e) => {
+                          const input = footerForm.querySelector(".footer-input")
+                          if (input && input.checkValidity()) {
+                            const originalText = footerForm.parentElement.querySelector(".footer-newsletter-text").textContent
+                            const newsletterText = footerForm.parentElement.querySelector(".footer-newsletter-text")
+
+                            newsletterText.style.color = "var(--color-accent)"
+                            newsletterText.textContent = "Thank you for subscribing to iORA updates."
+
+                            footerForm.style.opacity = "0"
+                            footerForm.style.pointerEvents = "none"
+
+                            setTimeout(() => {
+                              footerForm.reset()
+                              footerForm.style.opacity = "1"
+                              footerForm.style.pointerEvents = "all"
+                              newsletterText.textContent = originalText
+                              newsletterText.style.color = ""
+                            }, 5000)
+                          }
+                        })
+                      }
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </footer-wrapper>
+      </div>
+      <link
+        rel="canonical"
+        href="https://obvious-substantial-kangaroo-f7l4ft.teleporthq.app/ai-sales-analysis-forecasting"
+      />
+    </div>
+  </body>
+</html>

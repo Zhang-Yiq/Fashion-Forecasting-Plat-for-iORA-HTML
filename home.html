@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - Fashion Forecasting Plat for iORA</title>
+    <meta
+      property="og:title"
+      content="Home - Fashion Forecasting Plat for iORA"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Nunito Sans";
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container1">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div id="Navigation" class="navigation-container1">
+            <nav class="navigation-wrapper">
+              <div id="mobileOverlay" class="navigation-mobile-overlay">
+                <div class="navigation-overlay-header">
+                  <a href="Homepage">
+                    <div class="navigation-logo">
+                      <span class="section-title">iORA</span>
+                    </div>
+                  </a>
+                  <button
+                    id="mobileClose"
+                    aria-label="Close Menu"
+                    class="navigation-close-btn"
+                  >
+                    <svg
+                      fill="none"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m15 9l-6 6m0-6l6 6"></path>
+                      <circle r="10" cx="12" cy="12"></circle>
+                    </svg>
+                  </button>
+                </div>
+                <div class="navigation-overlay-content">
+                  <ul class="navigation-mobile-list">
+                    <li>
+                      <a href="Homepage">
+                        <div class="navigation-mobile-link">
+                          <span>Dashboard</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="navigation-mobile-link">
+                          <span>Sales Analysis</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="navigation-mobile-link">
+                          <span>Database Management</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="navigation-mobile-link">
+                          <span>Corporate Culture</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li><hr class="navigation-divider" /></li>
+                    <li>
+                      <a href="#">
+                        <div class="navigation-mobile-link">
+                          <span>Profile Settings</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="logout navigation-mobile-link">
+                          <span>Logout</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <dialog id="profileModal" class="navigation-dialog">
+                <div class="navigation-dialog-content">
+                  <div class="navigation-dialog-header">
+                    <h2 class="section-subtitle">Personal Information</h2>
+                    <button id="closeProfile" class="navigation-dialog-close">
+                      <svg
+                        fill="none"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m15 9l-6 6m0-6l6 6"></path>
+                        <circle r="10" cx="12" cy="12"></circle>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="navigation-user-info">
+                    <div class="navigation-user-avatar">
+                      <svg
+                        fill="none"
+                        width="48"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="48"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle r="10" cx="12" cy="12"></circle>
+                        <circle r="3" cx="12" cy="10"></circle>
+                        <path
+                          d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="navigation-user-details">
+                      <p class="section-content">
+                        <span class="navigation-text16">Employee ID:</span>
+                        <span>#IOR-2941</span>
+                      </p>
+                      <p class="section-content">
+                        <span class="navigation-text18">Department:</span>
+                        <span>Regional Merchandising</span>
+                      </p>
+                      <p class="section-content">
+                        <span class="navigation-text20">Last Login:</span>
+                        <span>Oct 24, 2025 08:45 AM</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="navigation-dialog-actions">
+                    <button class="btn-outline btn-sm btn">Edit Profile</button>
+                    <button class="btn-sm btn btn-primary">Logout</button>
+                  </div>
+                </div>
+              </dialog>
+              <div class="navigation-container">
+                <a href="Homepage">
+                  <div class="navigation-logo">
+                    <span class="section-title">iORA</span>
+                  </div>
+                </a>
+                <div class="navigation-desktop-menu">
+                  <ul class="navigation-list">
+                    <a href="home.html">
+                      <li
+                        class="navigation-thq-navigation-item-elm1 navigation-item"
+                      >
+                        <div class="navigation-link">
+                          <span>Dashboard</span>
+                        </div>
+                      </li>
+                    </a>
+                    <a href="ai-sales-analysis-forecasting.html">
+                      <li
+                        class="navigation-thq-navigation-item-elm2 navigation-item"
+                      >
+                        <div class="navigation-link">
+                          <svg
+                            fill="none"
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M3 3v16a2 2 0 0 0 2 2h16M7 16h8m-8-5h12M7 6h3"
+                            ></path>
+                          </svg>
+                          <span>Sales Analysis</span>
+                        </div>
+                      </li>
+                    </a>
+                    <a href="database-management.html">
+                      <li
+                        class="navigation-thq-navigation-item-elm3 navigation-item"
+                      >
+                        <div class="navigation-link">
+                          <svg
+                            fill="none"
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M3 5v14a9 3 0 0 0 18 0V5"></path>
+                            <path d="M3 12a9 3 0 0 0 18 0"></path>
+                          </svg>
+                          <span>Database</span>
+                        </div>
+                      </li>
+                    </a>
+                    <a href="corporate-culture.html">
+                      <li
+                        class="navigation-thq-navigation-item-elm4 navigation-item"
+                      >
+                        <div class="navigation-link">
+                          <svg
+                            fill="none"
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
+                            ></path>
+                          </svg>
+                          <span>Culture</span>
+                        </div>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="navigation-actions">
+                  <button
+                    id="profileToggle"
+                    aria-label="Personal Information"
+                    class="navigation-profile-btn"
+                  >
+                    <a href="personal-account.html">
+                      <div class="navigation-thq-navigation-avatar-elm">
+                        <svg
+                          fill="none"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
+                          ></path>
+                          <circle r="4" cx="12" cy="7"></circle>
+                        </svg>
+                      </div>
+                    </a>
+                  </button>
+                  <button
+                    id="mobileToggle"
+                    aria-label="Toggle Menu"
+                    aria-expanded="false"
+                    class="navigation-mobile-toggle"
+                  >
+                    <svg
+                      fill="none"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+                <a href="index.html" class="navigation-navlink6 button">
+                  <span>
+                    <fragment class="home-fragment">
+                      <span class="home-text10">Log Out</span>
+                    </fragment>
+                  </span>
+                </a>
+              </div>
+            </nav>
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <script defer="" data-name="navigation-logic">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const mobileToggle = document.getElementById("mobileToggle")
+                      const mobileClose = document.getElementById("mobileClose")
+                      const mobileOverlay = document.getElementById("mobileOverlay")
+                      const profileToggle = document.getElementById("profileToggle")
+                      const profileModal = document.getElementById("profileModal")
+                      const closeProfile = document.getElementById("closeProfile")
+
+                      const openMobileMenu = () => {
+                        mobileOverlay.style.display = "flex"
+                        document.body.style.overflow = "hidden"
+                        mobileToggle.setAttribute("aria-expanded", "true")
+                      }
+
+                      const closeMobileMenu = () => {
+                        mobileOverlay.style.display = "none"
+                        document.body.style.overflow = ""
+                        mobileToggle.setAttribute("aria-expanded", "false")
+                      }
+
+                      mobileToggle.addEventListener("click", openMobileMenu)
+                      mobileClose.addEventListener("click", closeMobileMenu)
+
+                      profileToggle.addEventListener("click", () => {
+                        profileModal.showModal()
+                      })
+
+                      closeProfile.addEventListener("click", () => {
+                        profileModal.close()
+                      })
+
+                      profileModal.addEventListener("click", (e) => {
+                        if (e.target === profileModal) {
+                          profileModal.close()
+                        }
+                      })
+
+                      // Handle active link state simulation
+                      const navLinks = document.querySelectorAll(".navigation-link")
+                      navLinks.forEach((link) => {
+                        link.addEventListener("click", function () {
+                          navLinks.forEach((l) => (l.style.color = "var(--color-on-surface)"))
+                          this.style.color = "var(--color-accent)"
+                        })
+                      })
+
+                      // Handle mobile links closing menu
+                      const mobileLinks = document.querySelectorAll(".navigation-mobile-link")
+                      mobileLinks.forEach((link) => {
+                        link.addEventListener("click", closeMobileMenu)
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </navigation-wrapper>
+        <section class="hero-section">
+          <div class="hero-diagonal-wrapper">
+            <div class="hero-content-left">
+              <div class="hero-text-container">
+                <h1 class="hero-title home-hero-title">Seasonal Bestsellers</h1>
+                <p class="home-hero-subtitle hero-subtitle">
+                  Reimagining classics with contemporary urban elegance. Explore
+                  our top-performing silhouettes tailored for the Asian climate.
+                </p>
+                <div class="hero-actions">
+                  <button class="btn btn-primary btn-lg">
+                    <svg
+                      fill="none"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle r="1" cx="8" cy="21"></circle>
+                      <circle r="1" cx="19" cy="21"></circle>
+                      <path
+                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                      ></path>
+                    </svg>
+                    <span>Quick Add</span>
+                  </button>
+                  <button class="btn-outline btn btn-lg">View Details</button>
+                </div>
+                <div class="hero-specs-grid">
+                  <div class="hero-spec-item">
+                    <span class="section-content">Fabric</span>
+                    <span class="hero-spec-value">Premium Linen</span>
+                  </div>
+                  <div class="hero-spec-item">
+                    <span class="section-content">Size Range</span>
+                    <span class="hero-spec-value">XS - XXL</span>
+                  </div>
+                  <div class="hero-spec-item">
+                    <span class="section-content">Peak Month</span>
+                    <span class="hero-spec-value">May - July</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-image-right">
+              <img
+                alt="iORA Seasonal Bestseller - Pastel Blue Suit"
+                src="https://images.pexels.com/photos/7873046/pexels-photo-7873046.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                class="hero-main-img"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="recent-gallery">
+          <div class="gallery-header">
+            <h2 class="section-title">Recently Viewed</h2>
+            <p class="section-subtitle">
+              Pick up where you left off with your favorite selections.
+            </p>
+          </div>
+          <div class="carousel-outer">
+            <div class="carousel-track">
+              <div class="carousel-card">
+                <div class="card-image-wrapper">
+                  <img
+                    alt="White Blazer"
+                    src="https://images.pexels.com/photos/9634511/pexels-photo-9634511.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    class="card-img"
+                  />
+                  <button
+                    aria-label="Save to wishlist"
+                    class="card-wishlist-btn"
+                  >
+                    <svg
+                      fill="none"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676a.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-details">
+                  <h3 class="section-subtitle">Structured White Blazer</h3>
+                  <div class="card-specs">
+                    <span class="section-content">
+                      Cotton Blend | Bone | S - L
+                    </span>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn-sm btn btn-primary">Re-open</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-card">
+                <div class="card-image-wrapper">
+                  <img
+                    alt="Blue Shirt"
+                    src="https://images.pexels.com/photos/15839889/pexels-photo-15839889.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    class="card-img"
+                  />
+                  <button
+                    aria-label="Save to wishlist"
+                    class="card-wishlist-btn"
+                  >
+                    <svg
+                      fill="none"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676a.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-details">
+                  <h3 class="section-subtitle">Urban Minimalist Shirt</h3>
+                  <div class="card-specs">
+                    <span class="section-content">
+                      Silk Finish | Navy | M - XL
+                    </span>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn-sm btn btn-primary">Re-open</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-card">
+                <div class="card-image-wrapper">
+                  <img
+                    alt="Beige Dress"
+                    src="https://images.pexels.com/photos/13816066/pexels-photo-13816066.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    class="card-img"
+                  />
+                  <button
+                    aria-label="Save to wishlist"
+                    class="card-wishlist-btn"
+                  >
+                    <svg
+                      fill="none"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676a.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-details">
+                  <h3 class="section-subtitle">Classic Shift Dress</h3>
+                  <div class="card-specs">
+                    <span class="section-content">
+                      Breathable Poly | Beige | S - XXL
+                    </span>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn-sm btn btn-primary">Re-open</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-card">
+                <div class="card-image-wrapper">
+                  <img
+                    alt="Floral Jacket"
+                    src="https://images.pexels.com/photos/34402774/pexels-photo-34402774.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    class="card-img"
+                  />
+                  <button
+                    aria-label="Save to wishlist"
+                    class="card-wishlist-btn"
+                  >
+                    <svg
+                      fill="none"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676a.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-details">
+                  <h3 class="section-subtitle">Floral Accent Blazer</h3>
+                  <div class="card-specs">
+                    <span class="section-content">
+                      Linen Print | Pink | XS - M
+                    </span>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn-sm btn btn-primary">Re-open</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="stats-dashboard">
+          <div class="stats-container">
+            <div class="bento-grid">
+              <div class="cell-wide bento-cell">
+                <div class="cell-header">
+                  <h2 class="section-title">Sales Performance</h2>
+                  <div class="cell-actions">
+                    <button class="btn-outline btn-sm btn">
+                      Filter: Monthly
+                    </button>
+                  </div>
+                </div>
+                <div class="chart-placeholder">
+                  <div class="bar-group">
+                    <div data-label="Linen" class="home-thq-bar-elm1 bar"></div>
+                    <div
+                      data-label="Cotton"
+                      class="home-thq-bar-elm2 bar"
+                    ></div>
+                    <div data-label="Silk" class="home-thq-bar-elm3 bar"></div>
+                    <div data-label="Poly" class="home-thq-bar-elm4 bar"></div>
+                  </div>
+                  <div class="chart-legend">
+                    <span class="section-content">
+                      Sales by Fabric Distribution
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cell-square bento-cell">
+                <div class="stat-unit">
+                  <span class="stat-label">Peak Month</span>
+                  <span class="stat-value">JULY</span>
+                  <span class="stat-trend">+12.4%</span>
+                </div>
+              </div>
+              <div class="cell-square bento-cell">
+                <div class="stat-unit">
+                  <span class="stat-label">Top Color</span>
+                  <span class="stat-value">SANDY GOLD</span>
+                  <div class="color-dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ai-services">
+          <div class="services-container">
+            <div class="services-layout">
+              <div class="services-main">
+                <h2 class="section-title">AI Sales Analysis</h2>
+                <p class="section-content">
+                  Leverage our proprietary forecasting engine to predict future
+                  seasonal demand. Input your parameters to generate optimized
+                  product tables.
+                </p>
+                <div class="ai-input-group">
+                  <div class="input-wrapper">
+                    <input
+                      type="text"
+                      placeholder="Predict sales for Linen Trousers in Q3..."
+                      class="ai-prompt-field"
+                    />
+                    <button class="btn-accent btn">
+                      <svg
+                        fill="none"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
+                        ></path>
+                      </svg>
+                      <span>Generate</span>
+                    </button>
+                  </div>
+                  <div class="example-prompts">
+                    <span class="prompt-chip">
+                      "Forecast Silk Shirts for Autumn"
+                    </span>
+                    <span class="prompt-chip">
+                      "Analyze color trends for May"
+                    </span>
+                    <span class="prompt-chip">
+                      "Stock optimization for XS sizes"
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <aside class="services-sidebar">
+                <div class="sidebar-card">
+                  <h3 class="section-subtitle">Quick Access</h3>
+                  <ul class="sidebar-links">
+                    <li>
+                      <a href="#">
+                        <div class="btn-link btn">
+                          <span>Historical Data View</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="btn-link btn">
+                          <span>Regional Performance</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="btn-link btn">
+                          <span>Fabric Availability</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+        <section class="showcase-collections">
+          <div class="showcase-wrapper">
+            <div class="freeform-bento">
+              <div class="item-large bento-item">
+                <img
+                  alt="Collection"
+                  src="https://images.pexels.com/photos/6347931/pexels-photo-6347931.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="bento-img"
+                />
+                <div class="bento-overlay">
+                  <h3 class="section-title">Lightweight Linens</h3>
+                  <p class="section-content">
+                    Engineered for the humid Asian climate without compromising
+                    on professional structure.
+                  </p>
+                  <button class="btn-outline btn-sm btn">
+                    Explore Collection
+                  </button>
+                </div>
+              </div>
+              <div class="bento-item item-vertical">
+                <img
+                  alt="Workwear"
+                  src="https://images.pexels.com/photos/27874698/pexels-photo-27874698.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="bento-img"
+                />
+                <div class="bento-overlay">
+                  <h3 class="section-subtitle">Work-to-Weekend</h3>
+                  <button class="btn-accent btn-sm btn">View Items</button>
+                </div>
+              </div>
+              <div class="item-square bento-item">
+                <img
+                  alt="Accessories"
+                  src="https://images.pexels.com/photos/9594944/pexels-photo-9594944.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="bento-img"
+                />
+                <div class="bento-overlay">
+                  <span class="section-subtitle">New Accessories</span>
+                </div>
+              </div>
+              <div class="item-horizontal bento-item">
+                <div class="bento-text-box">
+                  <h3 class="section-subtitle">The iORA Philosophy</h3>
+                  <p class="section-content">
+                    Reimagining classics with meticulous attention to detail and
+                    wearability.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="inventory-comparison">
+          <div class="comparison-container">
+            <div class="bento-grid">
+              <div class="cell-alerts cell-wide bento-cell">
+                <div class="cell-header">
+                  <h2 class="section-title">Inventory Health</h2>
+                  <span class="alert-badge">3 Critical Alerts</span>
+                </div>
+                <div class="inventory-list">
+                  <div class="inventory-item">
+                    <div class="item-info">
+                      <span class="item-name">Linen Trousers (Beige)</span>
+                      <span class="item-meta">Size: M | Low Stock</span>
+                    </div>
+                    <div class="item-status status-danger">
+                      <span>8% Remaining</span>
+                    </div>
+                    <button class="btn-link btn-sm btn">Edit in DB</button>
+                  </div>
+                  <div class="inventory-item">
+                    <div class="item-info">
+                      <span class="item-name">Urban Silk Shirt (Navy)</span>
+                      <span class="item-meta">
+                        Size: L | Projected Sell-through
+                      </span>
+                    </div>
+                    <div class="item-status status-warning">
+                      <span>High Velocity</span>
+                    </div>
+                    <button class="btn-link btn-sm btn">Edit in DB</button>
+                  </div>
+                </div>
+              </div>
+              <div class="cell-square bento-cell">
+                <div class="stat-unit">
+                  <span class="stat-label">Monthly Sell-through</span>
+                  <span class="stat-value">72%</span>
+                  <div class="progress-ring"></div>
+                </div>
+              </div>
+              <div class="cell-square bento-cell">
+                <div class="stat-unit">
+                  <span class="stat-label">New Arrivals</span>
+                  <span class="stat-value">14</span>
+                  <span class="stat-meta">Pending DB Sync</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cta-forecast">
+          <div class="cta-container">
+            <div class="cta-card">
+              <div class="cta-content">
+                <h2 class="section-title">Ready for Next Season?</h2>
+                <p class="section-content">
+                  Run a comprehensive AI forecast based on current market trends
+                  and historical performance. Our engine provides 94% accuracy
+                  for Asian urban demographics.
+                </p>
+                <div class="cta-meta">
+                  <span class="section-content">
+                    <span class="home-text18">Current Dataset:</span>
+                    <span>Spring/Summer 2025</span>
+                  </span>
+                  <span class="section-content">
+                    <span class="home-text20">Estimated Runtime:</span>
+                    <span>~45 seconds</span>
+                  </span>
+                </div>
+              </div>
+              <div class="cta-actions">
+                <a
+                  href="#Navigation"
+                  class="home-thq-btn-elm25 btn-accent btn btn-lg"
+                >
+                  Run Full Forecast
+                </a>
+                <a
+                  href="ai-sales-analysis-forecasting.html"
+                  class="home-thq-btn-elm26 btn-outline btn btn-lg"
+                >
+                  Open Forecasting Tool
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="home-container2">
+          <div class="home-container3">
+            <script defer="" data-name="iora-homepage-interactions">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  const carousel = document.querySelector(".carousel-outer")
+                  let isDown = false
+                  let startX
+                  let scrollLeft
+
+                  if (carousel) {
+                    carousel.addEventListener("mousedown", (e) => {
+                      isDown = true
+                      carousel.classList.add("active")
+                      startX = e.pageX - carousel.offsetLeft
+                      scrollLeft = carousel.scrollLeft
+                    })
+
+                    carousel.addEventListener("mouseleave", () => {
+                      isDown = false
+                      carousel.classList.remove("active")
+                    })
+
+                    carousel.addEventListener("mouseup", () => {
+                      isDown = false
+                      carousel.classList.remove("active")
+                    })
+
+                    carousel.addEventListener("mousemove", (e) => {
+                      if (!isDown) return
+                      e.preventDefault()
+                      const x = e.pageX - carousel.offsetLeft
+                      const walk = (x - startX) * 2
+                      carousel.scrollLeft = scrollLeft - walk
+                    })
+                  }
+
+                  const promptChips = document.querySelectorAll(".prompt-chip")
+                  const aiInput = document.querySelector(".ai-prompt-field")
+
+                  promptChips.forEach((chip) => {
+                    chip.addEventListener("click", () => {
+                      if (aiInput) {
+                        aiInput.value = chip.textContent.replace(/"/g, "")
+                        aiInput.focus()
+                      }
+                    })
+                  })
+
+                  const observerOptions = {
+                    threshold: 0.1,
+                  }
+
+                  const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1"
+                        entry.target.style.transform = "translateY(0)"
+                      }
+                    })
+                  }, observerOptions)
+
+                  document.querySelectorAll(".carousel-card, .bento-cell, .bento-item").forEach((el) => {
+                    el.style.opacity = "0"
+                    el.style.transform = "translateY(20px)"
+                    el.style.transition = "all 0.6s ease-out"
+                    observer.observe(el)
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container1">
+            <footer class="footer-root">
+              <div class="footer-container">
+                <div class="footer-main-grid">
+                  <div class="footer-column">
+                    <div class="footer-brand-lockup">
+                      <span class="footer-logo">iORA</span>
+                      <p class="footer-tagline section-content">
+                        Established 1997. Reimagining classics for the
+                        contemporary Asian woman with meticulous attention to
+                        detail and comfort.
+                      </p>
+                    </div>
+                    <div class="footer-social-wrapper">
+                      <h3 class="footer-heading section-subtitle">
+                        Follow Our Story
+                      </h3>
+                      <div class="footer-social-icons">
+                        <a href="#">
+                          <div aria-label="Facebook" class="footer-social-link">
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div
+                            aria-label="Instagram"
+                            class="footer-social-link"
+                          >
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <rect
+                                  x="2"
+                                  y="2"
+                                  rx="5"
+                                  ry="5"
+                                  width="20"
+                                  height="20"
+                                ></rect>
+                                <path
+                                  d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                                ></path>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div aria-label="LinkedIn" class="footer-social-link">
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                                ></path>
+                                <circle r="2" cx="4" cy="4"></circle>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-column">
+                    <h3 class="footer-heading section-subtitle">
+                      Platform Navigation
+                    </h3>
+                    <nav class="footer-nav">
+                      <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                          <a href="#">
+                            <div class="footer-nav-link section-content">
+                              <svg
+                                width="18"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="18"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M5 12h14m-7-7l7 7l-7 7"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                              <span>Enterprise Homepage</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="footer-nav-item">
+                          <a href="#">
+                            <div class="footer-nav-link section-content">
+                              <svg
+                                width="18"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="18"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M5 12h14m-7-7l7 7l-7 7"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                              <span>AI Sales Forecasting</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="footer-nav-item">
+                          <a href="#">
+                            <div class="footer-nav-link section-content">
+                              <svg
+                                width="18"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="18"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M5 12h14m-7-7l7 7l-7 7"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                              <span>Database Management</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="footer-nav-item">
+                          <a href="#">
+                            <div class="footer-nav-link section-content">
+                              <svg
+                                width="18"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="18"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M5 12h14m-7-7l7 7l-7 7"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                              <span>Corporate Culture</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="footer-nav-item">
+                          <a href="#">
+                            <div class="footer-nav-link section-content">
+                              <svg
+                                width="18"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="18"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M5 12h14m-7-7l7 7l-7 7"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                              <span>Personal Account</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="footer-column">
+                    <h3 class="footer-heading section-subtitle">
+                      Headquarters
+                    </h3>
+                    <div class="footer-contact-info">
+                      <div class="footer-contact-item">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                            ></path>
+                            <circle r="3" cx="12" cy="10"></circle>
+                          </g>
+                        </svg>
+                        <span class="section-content">
+                          iORA Fashion Pte Ltd, Singapore
+                        </span>
+                      </div>
+                      <div class="footer-contact-item">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <span class="section-content">+65 6748 1234</span>
+                      </div>
+                      <div class="footer-contact-item">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                            ></path>
+                            <rect
+                              x="2"
+                              y="4"
+                              rx="2"
+                              width="20"
+                              height="16"
+                            ></rect>
+                          </g>
+                        </svg>
+                        <span class="section-content">enquiry@iora.com.sg</span>
+                      </div>
+                    </div>
+                    <div class="footer-newsletter">
+                      <p class="section-content footer-newsletter-text">
+                        Join the iORA inner circle for seasonal updates.
+                      </p>
+                      <form
+                        action="/subscribe"
+                        method="POST"
+                        data-form-id="05670fbf-042a-4fcb-aaa5-2f49c3d667c1"
+                        class="footer-form"
+                      >
+                        <div class="footer-input-group">
+                          <input
+                            type="email"
+                            id="thq_textinput_8p5r"
+                            name="textinput"
+                            required="true"
+                            aria-label="Email Address"
+                            placeholder="Email Address"
+                            data-form-field-id="thq_textinput_8p5r"
+                            class="footer-input"
+                          />
+                          <button
+                            id="thq_button__-Ih"
+                            name="button"
+                            type="submit"
+                            aria-label="Subscribe"
+                            data-form-field-id="thq_button__-Ih"
+                            class="footer-submit-btn"
+                          >
+                            <svg
+                              width="20"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="20"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M5 12h14m-7-7l7 7l-7 7"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-legal-bar">
+                  <div class="footer-legal-content">
+                    <p class="footer-copyright section-content">
+                      &amp;copy; 2025 iORA Fashion Pte Ltd. All rights reserved.
+                    </p>
+                    <div class="footer-legal-links">
+                      <a href="#">
+                        <div class="footer-legal-link section-content">
+                          <span>Privacy Policy</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link section-content">
+                          <span>Terms of Service</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link section-content">
+                          <span>Cookie Settings</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <script defer="" data-name="footer-logic">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const footerForm = document.querySelector(".footer-form")
+                      if (footerForm) {
+                        footerForm.addEventListener("submit", (e) => {
+                          const input = footerForm.querySelector(".footer-input")
+                          if (input && input.checkValidity()) {
+                            const originalText = footerForm.parentElement.querySelector(".footer-newsletter-text").textContent
+                            const newsletterText = footerForm.parentElement.querySelector(".footer-newsletter-text")
+
+                            newsletterText.style.color = "var(--color-accent)"
+                            newsletterText.textContent = "Thank you for subscribing to iORA updates."
+
+                            footerForm.style.opacity = "0"
+                            footerForm.style.pointerEvents = "none"
+
+                            setTimeout(() => {
+                              footerForm.reset()
+                              footerForm.style.opacity = "1"
+                              footerForm.style.pointerEvents = "all"
+                              newsletterText.textContent = originalText
+                              newsletterText.style.color = ""
+                            }, 5000)
+                          }
+                        })
+                      }
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </footer-wrapper>
+      </div>
+      <link
+        rel="canonical"
+        href="https://obvious-substantial-kangaroo-f7l4ft.teleporthq.app/home"
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fashion Forecasting Plat for iORA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Nunito Sans";
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./ai-product-section.css" rel="stylesheet" />
+      <section
+        id=""
+        class="ai-product-section-thq-ai-product-section-elm ai-product-section"
+      >
+        <div class="ai-table-outer">
+          <div class="ai-table-header-actions">
+            <h2 class="section-title">
+              <fragment class="ai-product-section-fragment50">
+                <span class="ai-product-section-text88">
+                  Projection Results
+                </span>
+              </fragment>
+            </h2>
+            <div class="ai-table-buttons">
+              <button class="btn-outline btn-sm btn">
+                <svg
+                  fill="none"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="18"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 3v18"></path>
+                  <rect x="3" y="3" rx="2" width="18" height="18"></rect>
+                  <path d="M3 9h18M3 15h18"></path>
+                </svg>
+                <span>
+                  <fragment class="ai-product-section-fragment34">
+                    <span class="ai-product-section-text72">
+                      Toggle Columns
+                    </span>
+                  </fragment>
+                </span>
+              </button>
+              <button class="btn-sm btn btn-primary">
+                <svg
+                  fill="none"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="18"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 15V3m9 12v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+                  ></path>
+                  <path d="m7 10l5 5l5-5"></path>
+                </svg>
+                <span>
+                  <fragment class="ai-product-section-fragment42">
+                    <span class="ai-product-section-text80">Export CSV</span>
+                  </fragment>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="ai-table-wrapper">
+            <table class="ai-data-table">
+              <thead>
+                <tr>
+                  <th>
+                    <span>
+                      <fragment class="ai-product-section-fragment49">
+                        <span class="ai-product-section-text87">Fabric</span>
+                      </fragment>
+                    </span>
+                  </th>
+                  <th>
+                    <span>
+                      <fragment class="ai-product-section-fragment48">
+                        <span class="ai-product-section-text86">Colour</span>
+                      </fragment>
+                    </span>
+                  </th>
+                  <th>
+                    <span>
+                      <fragment class="ai-product-section-fragment31">
+                        <span class="ai-product-section-text69">Size</span>
+                      </fragment>
+                    </span>
+                  </th>
+                  <th>
+                    <span>
+                      <fragment class="ai-product-section-fragment14">
+                        <span class="ai-product-section-text52">Style</span>
+                      </fragment>
+                    </span>
+                  </th>
+                  <th>
+                    <span>
+                      <fragment class="ai-product-section-fragment26">
+                        <span class="ai-product-section-text64">Peak Mo.</span>
+                      </fragment>
+                    </span>
+                  </th>
+                  <th>
+                    <span>
+                      <fragment class="ai-product-section-fragment41">
+                        <span class="ai-product-section-text79">
+                          Proj. Vol.
+                        </span>
+                      </fragment>
+                    </span>
+                  </th>
+                  <th>
+                    <span>
+                      <fragment class="ai-product-section-fragment27">
+                        <span class="ai-product-section-text65">
+                          Confidence
+                        </span>
+                      </fragment>
+                    </span>
+                  </th>
+                  <th>
+                    <span>
+                      <fragment class="ai-product-section-fragment29">
+                        <span class="ai-product-section-text67">
+                          Reorder Qty
+                        </span>
+                      </fragment>
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment37">
+                        <span class="ai-product-section-text75">
+                          Linen Blend
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment21">
+                        <span class="ai-product-section-text59">
+                          Sandy Gold
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment36">
+                        <span class="ai-product-section-text74">S / M / L</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment32">
+                        <span class="ai-product-section-text70">
+                          Urban Trousers
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment15">
+                        <span class="ai-product-section-text53">May</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment47">
+                        <span class="ai-product-section-text85">1,250</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="ai-badge-high ai-badge">
+                      <fragment class="ai-product-section-fragment13">
+                        <span class="ai-product-section-text51">94%</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment12">
+                        <span class="ai-product-section-text50">450</span>
+                      </fragment>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment16">
+                        <span class="ai-product-section-text54">
+                          Cotton Poplin
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment11">
+                        <span class="ai-product-section-text49">
+                          Pure White
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment22">
+                        <span class="ai-product-section-text60">XS - XL</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment20">
+                        <span class="ai-product-section-text58">
+                          Classic Shirt
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment40">
+                        <span class="ai-product-section-text78">June</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment52">
+                        <span class="ai-product-section-text90">2,100</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="ai-badge-high ai-badge">
+                      <fragment class="ai-product-section-fragment45">
+                        <span class="ai-product-section-text83">91%</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment51">
+                        <span class="ai-product-section-text89">800</span>
+                      </fragment>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment30">
+                        <span class="ai-product-section-text68">
+                          Viscose Silk
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment28">
+                        <span class="ai-product-section-text66">
+                          Prussian Blue
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment17">
+                        <span class="ai-product-section-text55">S / M / L</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment10">
+                        <span class="ai-product-section-text48">
+                          Evening Dress
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment46">
+                        <span class="ai-product-section-text84">August</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment18">
+                        <span class="ai-product-section-text56">850</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="ai-badge-med ai-badge">
+                      <fragment class="ai-product-section-fragment39">
+                        <span class="ai-product-section-text77">82%</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment35">
+                        <span class="ai-product-section-text73">200</span>
+                      </fragment>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment33">
+                        <span class="ai-product-section-text71">
+                          Technical Mesh
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment38">
+                        <span class="ai-product-section-text76">
+                          Neutral Stone
+                        </span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment19">
+                        <span class="ai-product-section-text57">Free Size</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment44">
+                        <span class="ai-product-section-text82">Outerwear</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment24">
+                        <span class="ai-product-section-text62">October</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment23">
+                        <span class="ai-product-section-text61">1,100</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="ai-badge-high ai-badge">
+                      <fragment class="ai-product-section-fragment25">
+                        <span class="ai-product-section-text63">88%</span>
+                      </fragment>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <fragment class="ai-product-section-fragment43">
+                        <span class="ai-product-section-text81">350</span>
+                      </fragment>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

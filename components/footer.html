@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fashion Forecasting Plat for iORA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Nunito Sans";
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./footer.css" rel="stylesheet" />
+      <div class="footer-container1">
+        <footer class="footer-root">
+          <div class="footer-container">
+            <div class="footer-main-grid">
+              <div class="footer-column">
+                <div class="footer-brand-lockup">
+                  <span class="footer-logo">iORA</span>
+                  <p class="footer-tagline section-content">
+                    Established 1997. Reimagining classics for the contemporary
+                    Asian woman with meticulous attention to detail and comfort.
+                  </p>
+                </div>
+                <div class="footer-social-wrapper">
+                  <h3 class="footer-heading section-subtitle">
+                    Follow Our Story
+                  </h3>
+                  <div class="footer-social-icons">
+                    <a href="#">
+                      <div aria-label="Facebook" class="footer-social-link">
+                        <svg
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div aria-label="Instagram" class="footer-social-link">
+                        <svg
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <rect
+                              x="2"
+                              y="2"
+                              rx="5"
+                              ry="5"
+                              width="20"
+                              height="20"
+                            ></rect>
+                            <path
+                              d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                            ></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div aria-label="LinkedIn" class="footer-social-link">
+                        <svg
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                            ></path>
+                            <circle r="2" cx="4" cy="4"></circle>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-column">
+                <h3 class="footer-heading section-subtitle">
+                  Platform Navigation
+                </h3>
+                <nav class="footer-nav">
+                  <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                      <a href="#">
+                        <div class="footer-nav-link section-content">
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M5 12h14m-7-7l7 7l-7 7"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                          <span>Enterprise Homepage</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="footer-nav-item">
+                      <a href="#">
+                        <div class="footer-nav-link section-content">
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M5 12h14m-7-7l7 7l-7 7"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                          <span>AI Sales Forecasting</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="footer-nav-item">
+                      <a href="#">
+                        <div class="footer-nav-link section-content">
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M5 12h14m-7-7l7 7l-7 7"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                          <span>Database Management</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="footer-nav-item">
+                      <a href="#">
+                        <div class="footer-nav-link section-content">
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M5 12h14m-7-7l7 7l-7 7"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                          <span>Corporate Culture</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="footer-nav-item">
+                      <a href="#">
+                        <div class="footer-nav-link section-content">
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M5 12h14m-7-7l7 7l-7 7"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                          <span>Personal Account</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-column">
+                <h3 class="footer-heading section-subtitle">Headquarters</h3>
+                <div class="footer-contact-info">
+                  <div class="footer-contact-item">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
+                        <circle r="3" cx="12" cy="10"></circle>
+                      </g>
+                    </svg>
+                    <span class="section-content">
+                      iORA Fashion Pte Ltd, Singapore
+                    </span>
+                  </div>
+                  <div class="footer-contact-item">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="section-content">+65 6748 1234</span>
+                  </div>
+                  <div class="footer-contact-item">
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                        ></path>
+                        <rect x="2" y="4" rx="2" width="20" height="16"></rect>
+                      </g>
+                    </svg>
+                    <span class="section-content">enquiry@iora.com.sg</span>
+                  </div>
+                </div>
+                <div class="footer-newsletter">
+                  <p class="section-content footer-newsletter-text">
+                    Join the iORA inner circle for seasonal updates.
+                  </p>
+                  <form
+                    action="/subscribe"
+                    method="POST"
+                    data-form-id="05670fbf-042a-4fcb-aaa5-2f49c3d667c1"
+                    class="footer-form"
+                  >
+                    <div class="footer-input-group">
+                      <input
+                        type="email"
+                        id="thq_textinput_8p5r"
+                        name="textinput"
+                        required="true"
+                        aria-label="Email Address"
+                        placeholder="Email Address"
+                        data-form-field-id="thq_textinput_8p5r"
+                        class="footer-input"
+                      />
+                      <button
+                        id="thq_button__-Ih"
+                        name="button"
+                        type="submit"
+                        aria-label="Subscribe"
+                        data-form-field-id="thq_button__-Ih"
+                        class="footer-submit-btn"
+                      >
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M5 12h14m-7-7l7 7l-7 7"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="footer-legal-bar">
+              <div class="footer-legal-content">
+                <p class="footer-copyright section-content">
+                  &amp;copy; 2025 iORA Fashion Pte Ltd. All rights reserved.
+                </p>
+                <div class="footer-legal-links">
+                  <a href="#">
+                    <div class="footer-legal-link section-content">
+                      <span>Privacy Policy</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="footer-legal-link section-content">
+                      <span>Terms of Service</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="footer-legal-link section-content">
+                      <span>Cookie Settings</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="footer-container2">
+          <div class="footer-container3">
+            <script defer="" data-name="footer-logic">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  const footerForm = document.querySelector(".footer-form")
+                  if (footerForm) {
+                    footerForm.addEventListener("submit", (e) => {
+                      const input = footerForm.querySelector(".footer-input")
+                      if (input && input.checkValidity()) {
+                        const originalText = footerForm.parentElement.querySelector(".footer-newsletter-text").textContent
+                        const newsletterText = footerForm.parentElement.querySelector(".footer-newsletter-text")
+
+                        newsletterText.style.color = "var(--color-accent)"
+                        newsletterText.textContent = "Thank you for subscribing to iORA updates."
+
+                        footerForm.style.opacity = "0"
+                        footerForm.style.pointerEvents = "none"
+
+                        setTimeout(() => {
+                          footerForm.reset()
+                          footerForm.style.opacity = "1"
+                          footerForm.style.pointerEvents = "all"
+                          newsletterText.textContent = originalText
+                          newsletterText.style.color = ""
+                        }, 5000)
+                      }
+                    })
+                  }
+                })()
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+.navigation-wrapper {
+  display: contents;
+}
+ 
+.navigation-container1 {
+  display: contents;
+}
+ 
+.navigation-text16 {
+  font-weight: 700;
+}
+ 
+.navigation-text18 {
+  font-weight: 700;
+}
+ 
+.navigation-text20 {
+  font-weight: 700;
+}
+ 
+.navigation-thq-navigation-item-elm1 {
+  text-decoration: none;
+}
+ 
+.navigation-thq-navigation-item-elm2 {
+  text-decoration: none;
+}
+ 
+.navigation-thq-navigation-item-elm3 {
+  text-decoration: none;
+}
+ 
+.navigation-thq-navigation-item-elm4 {
+  text-decoration: none;
+}
+ 
+.navigation-thq-navigation-avatar-elm {
+  color: var(--color-on-accent);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background: var(--color-accent);
+  align-items: center;
+  border-radius: var(--border-radius-full);
+  justify-content: center;
+  text-decoration: none;
+}
+ 
+.navigation-navlink6 {
+  color: #fafbfc;
+  width: 103px;
+  text-decoration: none;
+  background-color: #c18f2a;
+}
+ 
+.navigation-container2 {
+  display: none;
+}
+ 
+.navigation-container3 {
+  display: contents;
+}
+ 
+.personal-account-fragment {
+  display: contents;
+}
+ 
+.personal-account-text10 {
+  display: inline-block;
+}
+
+.footer-wrapper {
+  display: contents;
+}
+ 
+.footer-container1 {
+  display: contents;
+}
+ 
+.footer-container2 {
+  display: none;
+}
+ 
+.footer-container3 {
+  display: contents;
+}
+
+.personal-account-container1 {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+}
+ 
+.personal-account-fragment {
+  display: contents;
+}
+ 
+.personal-account-text10 {
+  display: inline-block;
+}
+ 
+.personal-account-thq-btn-elm11 {
+  text-decoration: none;
+}
+ 
+.personal-account-text14 {
+  font-weight: 700;
+}
+ 
+.personal-account-text23 {
+  font-weight: 700;
+}
+ 
+.personal-account-text25 {
+  font-weight: 700;
+}
+ 
+.personal-account-thq-color-dot-elm1 {
+  background: #0b3a66;
+}
+ 
+.personal-account-thq-color-dot-elm2 {
+  background: #fafbfc;
+}
+ 
+.personal-account-thq-color-dot-elm3 {
+  background: #c18f2a;
+}
+ 
+.personal-account-thq-color-dot-elm4 {
+  background: #000000;
+}
+ 
+.personal-account-thq-section-content-elm29 {
+  color: var(--color-on-surface-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+ 
+.personal-account-thq-section-content-elm30 {
+  color: var(--color-on-surface-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+ 
+.personal-account-thq-section-content-elm31 {
+  color: var(--color-on-surface-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+ 
+.personal-account-thq-btn-elm23 {
+  width: 100%;
+  margin-top: auto;
+}
+ 
+.personal-account-thq-form-input-elm20 {
+  min-height: 150px;
+}
+ 
+.personal-account-container2 {
+  display: none;
+}
+ 
+.personal-account-container3 {
+  display: contents;
+}
+ 
+.personal-account-container4 {
+  display: none;
+}
+ 
+.personal-account-container5 {
+  display: contents;
+}

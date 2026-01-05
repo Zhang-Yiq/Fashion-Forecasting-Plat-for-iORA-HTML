@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fashion Forecasting Plat for iORA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Nunito Sans";
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./navigation.css" rel="stylesheet" />
+      <div id="" class="navigation-container1">
+        <nav class="navigation-wrapper">
+          <div id="mobileOverlay" class="navigation-mobile-overlay">
+            <div class="navigation-overlay-header">
+              <a href="Homepage">
+                <div class="navigation-logo">
+                  <span class="section-title">iORA</span>
+                </div>
+              </a>
+              <button
+                id="mobileClose"
+                aria-label="Close Menu"
+                class="navigation-close-btn"
+              >
+                <svg
+                  fill="none"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m15 9l-6 6m0-6l6 6"></path>
+                  <circle r="10" cx="12" cy="12"></circle>
+                </svg>
+              </button>
+            </div>
+            <div class="navigation-overlay-content">
+              <ul class="navigation-mobile-list">
+                <li>
+                  <a href="Homepage">
+                    <div class="navigation-mobile-link">
+                      <span>Dashboard</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="navigation-mobile-link">
+                      <span>Sales Analysis</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="navigation-mobile-link">
+                      <span>Database Management</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="navigation-mobile-link">
+                      <span>Corporate Culture</span>
+                    </div>
+                  </a>
+                </li>
+                <li><hr class="navigation-divider" /></li>
+                <li>
+                  <a href="#">
+                    <div class="navigation-mobile-link">
+                      <span>Profile Settings</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="logout navigation-mobile-link">
+                      <span>Logout</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <dialog id="profileModal" class="navigation-dialog">
+            <div class="navigation-dialog-content">
+              <div class="navigation-dialog-header">
+                <h2 class="section-subtitle">Personal Information</h2>
+                <button id="closeProfile" class="navigation-dialog-close">
+                  <svg
+                    fill="none"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m15 9l-6 6m0-6l6 6"></path>
+                    <circle r="10" cx="12" cy="12"></circle>
+                  </svg>
+                </button>
+              </div>
+              <div class="navigation-user-info">
+                <div class="navigation-user-avatar">
+                  <svg
+                    fill="none"
+                    width="48"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="48"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle r="10" cx="12" cy="12"></circle>
+                    <circle r="3" cx="12" cy="10"></circle>
+                    <path
+                      d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="navigation-user-details">
+                  <p class="section-content">
+                    <span class="navigation-text16">Employee ID:</span>
+                    <span>#IOR-2941</span>
+                  </p>
+                  <p class="section-content">
+                    <span class="navigation-text18">Department:</span>
+                    <span>Regional Merchandising</span>
+                  </p>
+                  <p class="section-content">
+                    <span class="navigation-text20">Last Login:</span>
+                    <span>Oct 24, 2025 08:45 AM</span>
+                  </p>
+                </div>
+              </div>
+              <div class="navigation-dialog-actions">
+                <button class="btn-outline btn-sm btn">Edit Profile</button>
+                <button class="btn-sm btn btn-primary">Logout</button>
+              </div>
+            </div>
+          </dialog>
+          <div class="navigation-container">
+            <a href="Homepage">
+              <div class="navigation-logo">
+                <span class="section-title">iORA</span>
+              </div>
+            </a>
+            <div class="navigation-desktop-menu">
+              <ul class="navigation-list">
+                <a href="home.html">
+                  <li
+                    class="navigation-thq-navigation-item-elm1 navigation-item"
+                  >
+                    <div class="navigation-link"><span>Dashboard</span></div>
+                  </li>
+                </a>
+                <a href="ai-sales-analysis-forecasting.html">
+                  <li
+                    class="navigation-thq-navigation-item-elm2 navigation-item"
+                  >
+                    <div class="navigation-link">
+                      <svg
+                        fill="none"
+                        width="18"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="18"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M3 3v16a2 2 0 0 0 2 2h16M7 16h8m-8-5h12M7 6h3"
+                        ></path>
+                      </svg>
+                      <span>Sales Analysis</span>
+                    </div>
+                  </li>
+                </a>
+                <a href="database-management.html">
+                  <li
+                    class="navigation-thq-navigation-item-elm3 navigation-item"
+                  >
+                    <div class="navigation-link">
+                      <svg
+                        fill="none"
+                        width="18"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="18"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="M3 5v14a9 3 0 0 0 18 0V5"></path>
+                        <path d="M3 12a9 3 0 0 0 18 0"></path>
+                      </svg>
+                      <span>Database</span>
+                    </div>
+                  </li>
+                </a>
+                <a href="corporate-culture.html">
+                  <li
+                    class="navigation-thq-navigation-item-elm4 navigation-item"
+                  >
+                    <div class="navigation-link">
+                      <svg
+                        fill="none"
+                        width="18"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="18"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
+                        ></path>
+                      </svg>
+                      <span>Culture</span>
+                    </div>
+                  </li>
+                </a>
+              </ul>
+            </div>
+            <div class="navigation-actions">
+              <button
+                id="profileToggle"
+                aria-label="Personal Information"
+                class="navigation-profile-btn"
+              >
+                <a href="personal-account.html">
+                  <div class="navigation-thq-navigation-avatar-elm">
+                    <svg
+                      fill="none"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle r="4" cx="12" cy="7"></circle>
+                    </svg>
+                  </div>
+                </a>
+              </button>
+              <button
+                id="mobileToggle"
+                aria-label="Toggle Menu"
+                aria-expanded="false"
+                class="navigation-mobile-toggle"
+              >
+                <svg
+                  fill="none"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+            <a href="index.html" class="navigation-navlink6 button">
+              <span>
+                <fragment class="navigation-fragment">
+                  <span class="navigation-text27">Log Out</span>
+                </fragment>
+              </span>
+            </a>
+          </div>
+        </nav>
+        <div class="navigation-container2">
+          <div class="navigation-container3">
+            <script defer="" data-name="navigation-logic">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  const mobileToggle = document.getElementById("mobileToggle")
+                  const mobileClose = document.getElementById("mobileClose")
+                  const mobileOverlay = document.getElementById("mobileOverlay")
+                  const profileToggle = document.getElementById("profileToggle")
+                  const profileModal = document.getElementById("profileModal")
+                  const closeProfile = document.getElementById("closeProfile")
+
+                  const openMobileMenu = () => {
+                    mobileOverlay.style.display = "flex"
+                    document.body.style.overflow = "hidden"
+                    mobileToggle.setAttribute("aria-expanded", "true")
+                  }
+
+                  const closeMobileMenu = () => {
+                    mobileOverlay.style.display = "none"
+                    document.body.style.overflow = ""
+                    mobileToggle.setAttribute("aria-expanded", "false")
+                  }
+
+                  mobileToggle.addEventListener("click", openMobileMenu)
+                  mobileClose.addEventListener("click", closeMobileMenu)
+
+                  profileToggle.addEventListener("click", () => {
+                    profileModal.showModal()
+                  })
+
+                  closeProfile.addEventListener("click", () => {
+                    profileModal.close()
+                  })
+
+                  profileModal.addEventListener("click", (e) => {
+                    if (e.target === profileModal) {
+                      profileModal.close()
+                    }
+                  })
+
+                  // Handle active link state simulation
+                  const navLinks = document.querySelectorAll(".navigation-link")
+                  navLinks.forEach((link) => {
+                    link.addEventListener("click", function () {
+                      navLinks.forEach((l) => (l.style.color = "var(--color-on-surface)"))
+                      this.style.color = "var(--color-accent)"
+                    })
+                  })
+
+                  // Handle mobile links closing menu
+                  const mobileLinks = document.querySelectorAll(".navigation-mobile-link")
+                  mobileLinks.forEach((link) => {
+                    link.addEventListener("click", closeMobileMenu)
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
