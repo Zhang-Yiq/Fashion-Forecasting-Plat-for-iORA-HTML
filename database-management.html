@@ -1218,13 +1218,13 @@
               </table>
             </div>
             <div class="db-grid-pagination">
-              <span class="db-page-info">Showing 1 to 10 of 30 records</span>
+              <span id="page-info" class="db-page-info">Showing 1 to 10 of 30 records</span>
               <div class="db-page-btns">
-                <button class="btn-outline btn-sm btn">Previous</button>
-                <button class="btn-sm btn btn-primary">1</button>
-                <button class="btn-outline btn-sm btn">2</button>
-                <button class="btn-outline btn-sm btn">3</button>
-                <button class="btn-outline btn-sm btn">Next</button>
+                <button id="prev-btn" class="btn-outline btn-sm btn">Previous</button>
+                <button id="page-1" class="btn-sm btn btn-primary">1</button>
+                <button id="page-2" class="btn-outline btn-sm btn">2</button>
+                <button id="page-3" class="btn-outline btn-sm btn">3</button>
+                <button id="next-btn" class="btn-outline btn-sm btn">Next</button>
               </div>
             </div>
           </div>
@@ -2245,5 +2245,78 @@
         href="https://obvious-substantial-kangaroo-f7l4ft.teleporthq.app/database-management"
       />
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const rowsPerPage = 10;
+        const totalRows = 30;
+        const totalPages = 3;
+        let currentPage = 1;
+
+        const tbody = document.querySelector('.db-main-table tbody');
+        const rows = tbody.querySelectorAll('tr');
+        const pageInfo = document.getElementById('page-info');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const pageBtns = [
+          document.getElementById('page-1'),
+          document.getElementById('page-2'),
+          document.getElementById('page-3')
+        ];
+
+        function showPage(page) {
+          currentPage = page;
+          const start = (page - 1) * rowsPerPage;
+          const end = start + rowsPerPage;
+
+          rows.forEach((row, index) => {
+            if (index >= start && index < end) {
+              row.style.display = '';
+            } else {
+              row.style.display = 'none';
+            }
+          });
+
+          // Update page info
+          const showingStart = start + 1;
+          const showingEnd = Math.min(end, totalRows);
+          pageInfo.textContent = `Showing ${showingStart} to ${showingEnd} of ${totalRows} records`;
+
+          // Update button classes
+          pageBtns.forEach((btn, index) => {
+            if (index + 1 === page) {
+              btn.classList.remove('btn-outline');
+              btn.classList.add('btn-primary');
+            } else {
+              btn.classList.remove('btn-primary');
+              btn.classList.add('btn-outline');
+            }
+          });
+
+          // Enable/disable prev/next
+          prevBtn.disabled = page === 1;
+          nextBtn.disabled = page === totalPages;
+        }
+
+        // Event listeners
+        pageBtns[0].addEventListener('click', () => showPage(1));
+        pageBtns[1].addEventListener('click', () => showPage(2));
+        pageBtns[2].addEventListener('click', () => showPage(3));
+
+        prevBtn.addEventListener('click', () => {
+          if (currentPage > 1) {
+            showPage(currentPage - 1);
+          }
+        });
+
+        nextBtn.addEventListener('click', () => {
+          if (currentPage < totalPages) {
+            showPage(currentPage + 1);
+          }
+        });
+
+        // Initialize
+        showPage(1);
+      });
+    </script>
   </body>
 </html>
